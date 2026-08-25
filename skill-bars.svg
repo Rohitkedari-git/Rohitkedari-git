@@ -1,0 +1,72 @@
+<svg width="900" height="300" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#1a0b2e"/>
+    </linearGradient>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="100%" stop-color="#0090ff"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff007f"/>
+      <stop offset="100%" stop-color="#ff4d94"/>
+    </linearGradient>
+    <linearGradient id="g3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#39ff14"/>
+      <stop offset="100%" stop-color="#a8ff00"/>
+    </linearGradient>
+    <linearGradient id="g4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffd700"/>
+      <stop offset="100%" stop-color="#ff9d00"/>
+    </linearGradient>
+    <linearGradient id="g5" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b967ff"/>
+      <stop offset="100%" stop-color="#6a5cff"/>
+    </linearGradient>
+    <filter id="glow2" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="900" height="300" rx="18" fill="url(#bg2)"/>
+  <rect x="4" y="4" width="892" height="292" rx="15" fill="none" stroke="#ff007f" stroke-opacity="0.4" stroke-width="1.5"/>
+
+  <text x="40" y="45" font-family="'Courier New', monospace" font-size="24" font-weight="700" fill="#ffffff" filter="url(#glow2)">📊 STAT POINTS</text>
+  <line x1="40" y1="58" x2="860" y2="58" stroke="#30363d" stroke-width="1"/>
+
+  <!-- bar template: label at x=40, bar starts x=280 width=460, value text at x=760 -->
+  <g font-family="'Courier New', monospace" font-size="15" font-weight="700">
+
+    <text x="40" y="100" fill="#00f0ff">STRENGTH</text>
+    <text x="180" y="100" fill="#8b949e" font-size="12" font-weight="400">Backend Logic</text>
+    <rect x="280" y="86" width="460" height="18" rx="9" fill="#161b22" stroke="#30363d"/>
+    <rect x="283" y="89" width="362" height="12" rx="6" fill="url(#g1)" filter="url(#glow2)"/>
+    <text x="760" y="100" fill="#ffffff">80%</text>
+
+    <text x="40" y="140" fill="#ff007f">INTELLIGENCE</text>
+    <text x="200" y="140" fill="#8b949e" font-size="12" font-weight="400">Algorithms &amp; DS</text>
+    <rect x="280" y="126" width="460" height="18" rx="9" fill="#161b22" stroke="#30363d"/>
+    <rect x="283" y="129" width="317" height="12" rx="6" fill="url(#g2)" filter="url(#glow2)"/>
+    <text x="760" y="140" fill="#ffffff">70%</text>
+
+    <text x="40" y="180" fill="#39ff14">AGILITY</text>
+    <text x="170" y="180" fill="#8b949e" font-size="12" font-weight="400">Frontend / UI</text>
+    <rect x="280" y="166" width="460" height="18" rx="9" fill="#161b22" stroke="#30363d"/>
+    <rect x="283" y="169" width="272" height="12" rx="6" fill="url(#g3)" filter="url(#glow2)"/>
+    <text x="760" y="180" fill="#ffffff">60%</text>
+
+    <text x="40" y="220" fill="#ffd700">WISDOM</text>
+    <text x="160" y="220" fill="#8b949e" font-size="12" font-weight="400">App Development</text>
+    <rect x="280" y="206" width="460" height="18" rx="9" fill="#161b22" stroke="#30363d"/>
+    <rect x="283" y="209" width="317" height="12" rx="6" fill="url(#g4)" filter="url(#glow2)"/>
+    <text x="760" y="220" fill="#ffffff">70%</text>
+
+    <text x="40" y="260" fill="#b967ff">LUCK</text>
+    <text x="140" y="260" fill="#8b949e" font-size="12" font-weight="400">Debugging RNG</text>
+    <rect x="280" y="246" width="460" height="18" rx="9" fill="#161b22" stroke="#30363d"/>
+    <rect x="283" y="249" width="227" height="12" rx="6" fill="url(#g5)" filter="url(#glow2)"/>
+    <text x="760" y="260" fill="#ffffff">50%</text>
+  </g>
+</svg>
