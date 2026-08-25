@@ -1,0 +1,85 @@
+<svg width="900" height="260" viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="55%" stop-color="#150a24"/>
+      <stop offset="100%" stop-color="#1a0b2e"/>
+    </linearGradient>
+    <linearGradient id="neonText" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="50%" stop-color="#ff007f"/>
+      <stop offset="100%" stop-color="#39ff14"/>
+    </linearGradient>
+    <linearGradient id="barFill" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="100%" stop-color="#ff007f"/>
+    </linearGradient>
+    <radialGradient id="glowSpot1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff007f" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#ff007f" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowSpot2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#00f0ff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="900" height="260" rx="18" fill="url(#bgGrad)"/>
+  <rect width="900" height="260" rx="18" fill="url(#grid)"/>
+  <circle cx="120" cy="40" r="140" fill="url(#glowSpot1)"/>
+  <circle cx="800" cy="220" r="160" fill="url(#glowSpot2)"/>
+  <rect x="4" y="4" width="892" height="252" rx="15" fill="none" stroke="#00f0ff" stroke-opacity="0.5" stroke-width="1.5"/>
+
+  <!-- corner brackets, HUD style -->
+  <path d="M20,20 L20,45 M20,20 L45,20" stroke="#39ff14" stroke-width="3" fill="none" filter="url(#softGlow)"/>
+  <path d="M880,20 L880,45 M880,20 L855,20" stroke="#39ff14" stroke-width="3" fill="none" filter="url(#softGlow)"/>
+  <path d="M20,240 L20,215 M20,240 L45,240" stroke="#39ff14" stroke-width="3" fill="none" filter="url(#softGlow)"/>
+  <path d="M880,240 L880,215 M880,240 L855,240" stroke="#39ff14" stroke-width="3" fill="none" filter="url(#softGlow)"/>
+
+  <!-- title -->
+  <text x="50" y="80" font-family="'Courier New', monospace" font-size="46" font-weight="700" fill="url(#neonText)" filter="url(#softGlow)">ROHIT KEDARI</text>
+  <text x="50" y="112" font-family="'Courier New', monospace" font-size="18" fill="#8b949e" letter-spacing="3">COMPUTER ENGINEERING STUDENT // NMIET</text>
+
+  <!-- level badge -->
+  <g transform="translate(730,35)">
+    <rect x="0" y="0" width="130" height="60" rx="10" fill="#0d1117" stroke="#ff007f" stroke-width="2" filter="url(#softGlow)"/>
+    <text x="65" y="24" text-anchor="middle" font-family="'Courier New', monospace" font-size="12" fill="#ff007f">LEVEL</text>
+    <text x="65" y="50" text-anchor="middle" font-family="'Courier New', monospace" font-size="26" font-weight="700" fill="#ffffff">21</text>
+  </g>
+
+  <!-- XP bar -->
+  <text x="50" y="150" font-family="'Courier New', monospace" font-size="13" fill="#39ff14">XP</text>
+  <rect x="90" y="138" width="760" height="16" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <rect x="92" y="140" width="600" height="12" rx="6" fill="url(#barFill)"/>
+  <text x="860" y="150" text-anchor="end" font-family="'Courier New', monospace" font-size="12" fill="#8b949e">7,940 / 10,000</text>
+
+  <!-- class chips -->
+  <g font-family="'Courier New', monospace" font-size="13" font-weight="700">
+    <rect x="50" y="175" width="118" height="30" rx="15" fill="#0d1117" stroke="#00f0ff" stroke-width="1.5"/>
+    <text x="109" y="195" text-anchor="middle" fill="#00f0ff">⚡ C++ / C</text>
+
+    <rect x="178" y="175" width="110" height="30" rx="15" fill="#0d1117" stroke="#ff007f" stroke-width="1.5"/>
+    <text x="233" y="195" text-anchor="middle" fill="#ff007f">🐍 Python</text>
+
+    <rect x="298" y="175" width="120" height="30" rx="15" fill="#0d1117" stroke="#39ff14" stroke-width="1.5"/>
+    <text x="358" y="195" text-anchor="middle" fill="#39ff14">🌐 HTML/Web</text>
+
+    <rect x="428" y="175" width="150" height="30" rx="15" fill="#0d1117" stroke="#ffd700" stroke-width="1.5"/>
+    <text x="503" y="195" text-anchor="middle" fill="#ffd700">🧩 Data Structures</text>
+
+    <rect x="588" y="175" width="150" height="30" rx="15" fill="#0d1117" stroke="#b967ff" stroke-width="1.5"/>
+    <text x="663" y="195" text-anchor="middle" fill="#b967ff">📱 App Dev</text>
+  </g>
+
+  <text x="50" y="235" font-family="'Courier New', monospace" font-size="12" fill="#8b949e">STATUS: <tspan fill="#39ff14" font-weight="700">● ONLINE — ACTIVELY FARMING XP</tspan></text>
+</svg>
