@@ -139,5 +139,9 @@ $ CONTACT
 ### 💾 *"Every commit is XP. Every bug is a boss fight. Every merge is a level up."*
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00f0ff,50:ff007f,100:39ff14&height=130&section=footer" width="100%" />
+### 🐍 Contribution Snake
+https://githubhttps/Rohitkedari-git/Rohitkedari-git/blob/output/github-contribution-
+grid-snake.gif
 
+![snake gif](https://github.com/Rohitkedari-git/Rohitkedari-git/blob/output/github-contribution-grid-snake.gif)
 </div>
