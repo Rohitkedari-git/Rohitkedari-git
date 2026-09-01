@@ -163,8 +163,17 @@ $ CONTACT
 
 ## 🐍 Contribution Snake
 
-<div align="center">
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/YOUR_USERNAME/cyber-contribution-snake/output/cyber-snake-dark.svg">
 
-<img src="https://raw.githubusercontent.com/Rohitkedari-git/Rohitkedari-git/output/github-contribution-grid-snake.gif" alt="GitHub contribution snake animation" width="100%" />
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="https://raw.githubusercontent.com/YOUR_USERNAME/cyber-contribution-snake/output/cyber-snake-light.svg">
 
-</div>
+  <img
+    src="https://raw.githubusercontent.com/YOUR_USERNAME/cyber-contribution-snake/output/cyber-snake-light.svg"
+    width="850"
+    alt="Cyber Contribution Snake">
+</picture>
